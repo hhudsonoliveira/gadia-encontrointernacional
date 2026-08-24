@@ -1,0 +1,5 @@
+# Material de origem do cliente (proposta e branding).
+# Fica fora do repositório para manter o deploy leve — o PDF tem ~36 MB.
+# Remova estas linhas se quiser versionar os originais.
+*.pdf
+Branding da marca.jpeg
