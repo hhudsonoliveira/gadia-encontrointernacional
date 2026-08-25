@@ -123,8 +123,11 @@ Tipos de letra (Google Fonts, substituições livres das fontes proprietárias d
 - **Raleway** — corpo de texto (já usada no material original)
 - **Playfair Display SC** — versaletes
 
-O monograma (`assets/img/monograma.svg`) foi redesenhado em vetor a partir da marca
-original, que no PDF era composta com uma fonte proprietária.
+O monograma (`assets/img/monograma.svg`) é a marca oficial — um **"I" sobreposto a um "N"**
+em Asangha-ReEx. Os contornos dos dois glifos foram vetorizados a partir do material do
+cliente e o encaixe foi validado contra as referências em `referencias-marca/` (98% de
+sobreposição). Só a marca é vetor: nenhum ficheiro de fonte proprietária é distribuído
+com o site.
 
 ---
 

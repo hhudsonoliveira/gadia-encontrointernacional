@@ -3,3 +3,6 @@
 # Remova estas linhas se quiser versionar os originais.
 *.pdf
 Branding da marca.jpeg
+
+# Referências de marca enviadas pelo cliente (não fazem parte do site publicado)
+referencias-marca/

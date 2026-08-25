@@ -1,15 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" role="img" aria-label="Monograma In Europa">
-  <g fill="#B89946">
-    <polygon points="60,38 74,38 103,142 89,142"/>
-    <polygon points="111,38 125,38 154,142 140,142"/>
-    <rect x="42" y="32" width="18" height="116"/>
-    <rect x="33" y="32" width="36" height="6"/>
-    <rect x="33" y="142" width="36" height="6"/>
-    <rect x="140" y="32" width="18" height="116"/>
-    <rect x="131" y="32" width="36" height="6"/>
-    <rect x="131" y="142" width="36" height="6"/>
-    <rect x="89" y="22" width="22" height="136"/>
-    <rect x="77" y="22" width="46" height="7"/>
-    <rect x="77" y="151" width="46" height="7"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126 116" role="img" aria-label="Monograma In Europa">
+  <title>In Europa</title>
+  <g fill="#C9A84C">
+    <path transform="translate(-5.7627 109.2500) scale(0.155748 -0.155952)" d="M37 0Q71 9 88.5 19.0Q106 29 112.0 49.0Q118 69 118 107V523Q118 561 112.0 581.0Q106 601 88.5 611.5Q71 622 37 630H248L662 108V523Q662 561 656.0 581.0Q650 601 632.5 611.5Q615 622 581 630H846Q812 622 794.5 611.5Q777 601 771.0 581.0Q765 561 765 523V107Q765 69 771.0 49.0Q777 29 794.5 19.0Q812 9 846 0H632L221 517V107Q221 69 227.0 49.0Q233 29 250.5 19.0Q268 9 302 0Z"/>
+    <path transform="translate(34.0368 116.0000) scale(0.167925 -0.184127)" d="M37 0Q71 9 88.5 19.0Q106 29 112.0 49.0Q118 69 118 107V523Q118 561 112.0 581.0Q106 601 88.5 611.5Q71 622 37 630H302Q268 622 250.5 611.5Q233 601 227.0 581.0Q221 561 221 523V107Q221 69 227.0 49.0Q233 29 250.5 19.0Q268 9 302 0Z"/>
   </g>
 </svg>
