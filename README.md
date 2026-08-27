@@ -53,13 +53,12 @@ python -m http.server 8899
 
 | # | O quê | Onde |
 |---|---|---|
-| 1 | **Prazo do acompanhante cortesia (15/08/2026) já decorreu.** Confirmar novo prazo e retirar as etiquetas "Prazo a confirmar" | `index.html` — secções Programação (dia 17) e Homenageado VIP |
-| 2 | Valores do Passaporte VIP e do lugar de acompanhante | `index.html` — secção Investimento, etiquetas `placeholder-tag` |
-| 3 | Formas de pagamento aceites | `index.html` — bloco `.payment` |
-| 4 | Nome, cargo, foto e bio dos palestrantes (Portugal, Moçambique, Luxemburgo) | `index.html` — secção Convidados, cards `.speaker` |
-| 5 | URL oficial do Instagram e do LinkedIn | `index.html` — rodapé, `href="#"` |
-| 6 | E-mail oficial para exercício de direitos RGPD | `politica-privacidade.html` — ponto 1 |
-| 7 | Domínio final | `<link rel="canonical">` e `og:image` |
+| 1 | Valores do Passaporte VIP e do lugar de acompanhante | `index.html` — secção Investimento, etiquetas `placeholder-tag` |
+| 2 | Formas de pagamento aceites | `index.html` — bloco `.payment` |
+| 3 | Nome, cargo, foto e bio dos palestrantes | `index.html` — secção Convidados, cards `.speaker` |
+| 4 | E-mail oficial para exercício de direitos RGPD | `politica-privacidade.html` — ponto 1 |
+| 5 | Domínio final | `<link rel="canonical">` e `og:image` |
+| 6 | LinkedIn — o ícone foi retirado a pedido; repor quando houver perfil | `index.html` — rodapé, `.footer__social` |
 
 Cada ponto está marcado no código com um comentário `PLACEHOLDER` ou com a etiqueta
 visual `.placeholder-tag` (moldura tracejada dourada), para não passar despercebido.
