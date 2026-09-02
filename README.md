@@ -14,7 +14,8 @@ index.html                  página principal (13 secções)
 politica-privacidade.html   política de privacidade (RGPD)
 css/style.css               estilos, tokens em :root
 js/main.js                  Lenis, GSAP/ScrollTrigger, nav, scroll spy, separadores
-assets/img/                 hero, Lisboa, hotel, retrato, galeria, monograma, favicon
+assets/img/                 hero, Lisboa, hotel, retrato, galeria, monograma, favicon, og
+robots.txt / sitemap.xml    indexação (apontam para o domínio final)
 assets/icons/               ícones dos 5 pilares (extraídos do material oficial)
 .nojekyll                   evita o processamento Jekyll no GitHub Pages
 ```
@@ -57,7 +58,7 @@ python -m http.server 8899
 | 2 | Formas de pagamento aceites | `index.html` — bloco `.payment` |
 | 3 | Nome, cargo, foto e bio dos palestrantes | `index.html` — secção Convidados, cards `.speaker` |
 | 4 | E-mail oficial para exercício de direitos RGPD | `politica-privacidade.html` — ponto 1 |
-| 5 | Domínio final | `<link rel="canonical">` e `og:image` |
+| 5 | ~~Domínio final~~ — definido: `proximonivel-empreendedores.com` | — |
 | 6 | LinkedIn — o ícone foi retirado a pedido; repor quando houver perfil | `index.html` — rodapé, `.footer__social` |
 
 Cada ponto está marcado no código com um comentário `PLACEHOLDER` ou com a etiqueta
