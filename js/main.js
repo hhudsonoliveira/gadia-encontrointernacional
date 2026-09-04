@@ -1,5 +1,5 @@
 /* ==========================================================================
-   5.º IN EUROPA — Lisboa 2026
+   6.º IN EUROPA — Lisboa 2026
    Interações: smooth scroll (Lenis), reveal (GSAP + ScrollTrigger),
    navegação fixa com scroll spy, menu móvel, separadores da programação.
    Tudo degrada com elegância: sem JS, sem CDN ou com "reduced motion",

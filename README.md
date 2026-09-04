@@ -1,4 +1,4 @@
-# 5.º In Europa — Encontro Internacional de Inteligência nos Negócios
+# 6.º In Europa — Encontro Internacional de Inteligência nos Negócios
 
 Site institucional one-page do encontro de 17 e 18 de outubro de 2026, no Hotel Real Palácio, em Lisboa.
 Realização: Próximo Nível Eventos e Negócios (Gádia Santos).
@@ -31,7 +31,7 @@ volta ao comportamento nativo.
 ```bash
 git init
 git add .
-git commit -m "Site 5.º In Europa"
+git commit -m "Site 6.º In Europa"
 git branch -M main
 git remote add origin <url-do-repositorio>
 git push -u origin main
