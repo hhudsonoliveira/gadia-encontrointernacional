@@ -347,6 +347,9 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 .btn--sm { padding: .8rem 1.35rem; font-size: var(--fs-xs); letter-spacing: .12em; }
 .btn--block { width: 100%; }
+/* aviso com o visual do botão, mas sem ação */
+.btn--status { cursor: default; pointer-events: none; line-height: 1.5; text-align: center; }
+.btn--status::after { display: none; }
 
 /* Link com sublinhado que cresce */
 .link-underline {
@@ -1168,54 +1171,26 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 .speaker__photo {
   position: relative;
-  display: grid;
-  place-items: center;
   aspect-ratio: 4 / 5;
-  background:
-    repeating-linear-gradient(135deg, rgba(184, 153, 70, .07) 0 1px, transparent 1px 11px),
-    linear-gradient(160deg, #16224F 0%, var(--navy-deep) 65%);
-  border: 1px solid var(--line-light);
+  background: var(--navy-deep);
   overflow: hidden;
+  box-shadow: 0 18px 40px -24px rgba(7, 12, 31, .45);
 }
-/* moldura interna — o vazio passa a ser uma decisão, não uma falha */
-.speaker__photo::after {
-  content: '';
-  position: absolute;
-  inset: 14px;
-  border: 1px solid rgba(184, 153, 70, .22);
-  pointer-events: none;
-  transition: inset .6s var(--ease-out), border-color .6s var(--ease);
+.speaker__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .8s var(--ease-out);
 }
-.speaker:hover .speaker__photo::after { inset: 10px; border-color: rgba(184, 153, 70, .4); }
-.speaker__photo img { width: 74px; opacity: .34; transition: opacity .6s var(--ease), transform .8s var(--ease-out); }
-.speaker:hover .speaker__photo img { opacity: .55; transform: scale(1.06); }
-.speaker__badge {
-  position: absolute;
-  top: .9rem; left: .9rem;
-  padding: .3rem .6rem;
-  background: rgba(7, 12, 31, .88);
-  border: 1px solid var(--line-dark);
+.speaker:hover .speaker__photo img { transform: scale(1.03); }
+.speaker__place {
+  padding-top: .9rem;
   font-family: var(--ff-head);
-  font-size: .6rem;
-  letter-spacing: .18em;
-  text-transform: uppercase;
-  color: var(--gold-light);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .04em;
 }
-.speaker__info { padding-top: 1.1rem; }
-.speaker__name {
-  font-family: var(--ff-display);
-  font-size: var(--fs-h4);
-  margin-bottom: .3rem;
-}
-.speaker__role {
-  font-family: var(--ff-head);
-  font-size: var(--fs-xs);
-  letter-spacing: .16em;
-  text-transform: uppercase;
-  color: var(--gold-deep);
-  margin-bottom: .6rem;
-}
-.speaker__bio { font-size: var(--fs-sm); color: var(--ink-soft); }
 
 /* ==========================================================================
    14. CENÁRIO
@@ -1244,36 +1219,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 /* ==========================================================================
    15. CANDIDATURA
    ========================================================================== */
-.steps {
-  display: grid;
-  gap: clamp(1.5rem, 3vw, 2rem);
-  margin-top: clamp(2.5rem, 5vw, 3.5rem);
-  counter-reset: step;
-}
-.step {
-  position: relative;
-  padding-top: 1.75rem;
-  border-top: 1px solid var(--line-light);
-}
-.step::before {
-  counter-increment: step;
-  content: counter(step, decimal-leading-zero);
-  position: absolute;
-  top: -.9rem; left: 0;
-  padding-right: .75rem;
-  background: var(--cream);
-  font-family: var(--ff-head);
-  font-size: var(--fs-sm);
-  font-weight: 700;
-  letter-spacing: .1em;
-  color: var(--gold-deep);
-}
-.step h3 {
-  font-family: var(--ff-display);
-  font-size: var(--fs-h4);
-  margin-bottom: .6rem;
-}
-.step p { font-size: var(--fs-sm); color: var(--ink-soft); }
 
 /* ==========================================================================
    16. INVESTIMENTO
@@ -1363,6 +1308,15 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   margin-bottom: .75rem;
 }
 .payment__chips { display: flex; flex-wrap: wrap; gap: .6rem; }
+.payment__chip {
+  padding: .55rem .9rem;
+  border: 1px solid var(--gold);
+  font-family: var(--ff-head);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  letter-spacing: .08em;
+  color: #fff;
+}
 .payment p { font-size: var(--fs-sm); color: var(--muted-dark); max-width: 52ch; }
 
 .editorial {
@@ -1538,8 +1492,9 @@ html.gsap-mode [data-reveal] { transition: none; }
    ========================================================================== */
 @media (min-width: 600px) {
   .pillars { grid-template-columns: repeat(2, 1fr); }
+  /* 2 + 1: o terceiro cartão ocupa a linha inteira, sem buraco na grelha */
+  .pillars .pillar:nth-child(3) { grid-column: span 2; }
   .speakers { grid-template-columns: repeat(2, 1fr); }
-  .steps { grid-template-columns: repeat(2, 1fr); }
   .audience { grid-template-columns: repeat(2, 1fr); }
   .bridge { grid-template-columns: repeat(3, 1fr); }
   .goal { grid-template-columns: 15rem 1fr; }
@@ -1574,14 +1529,10 @@ html.gsap-mode [data-reveal] { transition: none; }
   .founder { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); }
   .lisboa__grid { grid-template-columns: repeat(3, 1fr); }
   .lisboa__grid .media:nth-child(1) { grid-column: auto; }
-  /* 3 + 2: a última linha divide-se em dois cartões largos, sem buraco na grelha */
-  .pillars { grid-template-columns: repeat(6, 1fr); }
-  .pillars .pillar:nth-child(-n+3) { grid-column: span 2; }
-  .pillars .pillar:nth-child(4),
-  .pillars .pillar:nth-child(5) { grid-column: span 3; }
+  .pillars { grid-template-columns: repeat(3, 1fr); }
+  .pillars .pillar:nth-child(3) { grid-column: auto; }
   .day { grid-template-columns: minmax(0, .55fr) minmax(0, 1.45fr); }
   .speakers { grid-template-columns: repeat(3, 1fr); }
-  .steps { grid-template-columns: repeat(4, 1fr); }
   .audience { grid-template-columns: repeat(3, 1fr); }
   .plans { grid-template-columns: repeat(3, 1fr); }
   .payment { grid-template-columns: 1fr 1fr; align-items: center; }
@@ -1648,11 +1599,6 @@ html.gsap-mode [data-reveal] { transition: none; }
 .legal a:hover { color: var(--ink); }
 
 /* Nota de expectativa sob os CTAs do hero */
-.hero__foot {
-  margin-top: 1.15rem;
-  font-size: var(--fs-sm);
-  color: rgba(255, 255, 255, .62);
-}
 
 /* Valor real do plano — substitui a etiqueta .placeholder-tag quando confirmado */
 .plan__value {
