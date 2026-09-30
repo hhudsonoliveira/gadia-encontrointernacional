@@ -1079,6 +1079,11 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   font-size: var(--fs-sm);
   color: var(--muted-dark);
 }
+/* cronograma: coluna de horário com largura fixa para os textos alinharem */
+.timeline--schedule li { grid-template-columns: 3.4rem 1fr; padding-block: .8rem; }
+.timeline--schedule .timeline__idx { font-size: var(--fs-sm); font-variant-numeric: tabular-nums; padding-top: .2rem; }
+.timeline__pause .timeline__text { color: var(--muted-dark); font-style: italic; }
+.timeline__pause .timeline__idx { color: var(--muted-dark); }
 
 .note {
   margin-top: 2rem;
