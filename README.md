@@ -58,7 +58,7 @@ python -m http.server 8899
 | 2 | Formas de pagamento aceites | `index.html` — bloco `.payment` |
 | 3 | Nome, cargo, foto e bio dos palestrantes | `index.html` — secção Convidados, cards `.speaker` |
 | 4 | E-mail oficial para exercício de direitos RGPD | `politica-privacidade.html` — ponto 1 |
-| 5 | ~~Domínio final~~ — definido: `proximonivel-empreendedores.com` | — |
+| 5 | ~~Domínio final~~ — definido: `inteligencianosnegocios.com` | — |
 | 6 | LinkedIn — o ícone foi retirado a pedido; repor quando houver perfil | `index.html` — rodapé, `.footer__social` |
 
 Cada ponto está marcado no código com um comentário `PLACEHOLDER` ou com a etiqueta
