@@ -1,6 +1,6 @@
 # 6.º In Europa — Encontro Internacional de Inteligência nos Negócios
 
-Site institucional one-page do encontro de 17 e 18 de outubro de 2026, no Hotel Real Palácio, em Lisboa.
+Site institucional one-page do encontro de 18 de outubro de 2026, no Hotel Lezíria Park, em Vila Franca de Xira.
 Realização: Próximo Nível Eventos e Negócios (Gádia Santos).
 
 HTML5 + CSS3 + JavaScript vanilla. Sem framework, sem build step, sem dependências instaladas.
