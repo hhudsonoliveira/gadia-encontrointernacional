@@ -1,6 +1,6 @@
 /* ==========================================================================
-   6.º IN EUROPA — Encontro Internacional de Inteligência nos Negócios
-   Lisboa · 17 e 18 de outubro de 2026
+   7.º IN EUROPA — Encontro Internacional de Inteligência nos Negócios
+   Porto · 16 de maio de 2027
    Próximo Nível Eventos e Negócios
    --------------------------------------------------------------------------
    1.  Tokens
@@ -10,7 +10,7 @@
    5.  Navegação
    6.  Hero
    7.  Manifesto + Idealizadora
-   8.  Lisboa
+   8.  Porto
    9.  Premiação — pilares
    10. Programação
    11. Benefícios VIP
@@ -867,17 +867,16 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 
 /* ==========================================================================
-   8. LISBOA
+   8. PORTO
    ========================================================================== */
-.lisboa__grid {
+.cidade__grid {
   display: grid;
   gap: clamp(.75rem, 1.6vw, 1.25rem);
   grid-template-columns: repeat(2, 1fr);
   margin-top: clamp(2.5rem, 5vw, 4rem);
 }
-.lisboa__grid .media:nth-child(1) { grid-column: 1 / -1; }
-.lisboa__portrait { position: relative; }
-.lisboa__portrait::after {
+.cidade__portrait { position: relative; }
+.cidade__portrait::after {
   content: '';
   position: absolute;
   inset: auto auto -12px -12px;
@@ -1141,15 +1140,15 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   display: grid;
   gap: 1px;
   margin-top: clamp(2.5rem, 5vw, 3.5rem);
-  background: rgba(255, 255, 255, .1);
-  border: 1px solid rgba(255, 255, 255, .1);
+  background: rgba(255, 255, 255, .14);
+  border: 1px solid rgba(255, 255, 255, .14);
 }
 .audience__cell {
-  background: var(--navy-deep);
+  background: #182564;
   padding: clamp(1.5rem, 3vw, 2rem);
   transition: background .5s var(--ease);
 }
-.audience__cell:hover { background: #101B45; }
+.audience__cell:hover { background: #1F2E78; }
 .audience__idx {
   font-family: var(--ff-head);
   font-size: var(--fs-xs);
@@ -1164,7 +1163,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   color: #fff;
   margin-bottom: .5rem;
 }
-.audience__cell p { font-size: var(--fs-sm); color: var(--muted-dark); }
+.audience__cell p { font-size: var(--fs-sm); color: rgba(233, 236, 246, .8); }
 
 /* ==========================================================================
    13. CONVIDADOS
@@ -1324,19 +1323,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 .payment p { font-size: var(--fs-sm); color: var(--muted-dark); max-width: 52ch; }
 
-.editorial {
-  margin-top: clamp(2.5rem, 5vw, 4rem);
-  display: grid;
-  gap: clamp(2rem, 4vw, 3rem);
-  align-items: center;
-  padding: clamp(1.75rem, 3vw, 2.5rem);
-  border: 1px solid rgba(255, 255, 255, .12);
-}
-.editorial h3 { font-family: var(--ff-display); font-size: var(--fs-h3); color: #fff; margin-bottom: 1rem; }
-.editorial ul { display: grid; gap: .9rem; margin-top: 1.5rem; }
-.editorial li { font-size: var(--fs-sm); color: rgba(237, 239, 247, .82); }
-.editorial li b { display: block; color: #fff; font-weight: 500; font-family: var(--ff-head); letter-spacing: .02em; }
-
 /* ==========================================================================
    17. EDIÇÕES ANTERIORES
    ========================================================================== */
@@ -1384,7 +1370,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   color: #fff;
   line-height: 1.12;
 }
-.footer__cta p { color: var(--muted-dark); margin-top: 1rem; max-width: 46ch; }
 
 .footer__grid {
   display: grid;
@@ -1534,8 +1519,6 @@ html.gsap-mode [data-reveal] { transition: none; }
   .split__aside--sticky { position: sticky; top: calc(var(--nav-h) + 3rem); }
 
   .founder { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); }
-  .lisboa__grid { grid-template-columns: repeat(3, 1fr); }
-  .lisboa__grid .media:nth-child(1) { grid-column: auto; }
   .pillars { grid-template-columns: repeat(3, 1fr); }
   .pillars .pillar:nth-child(3) { grid-column: auto; }
   .day { grid-template-columns: minmax(0, .55fr) minmax(0, 1.45fr); }
@@ -1544,7 +1527,6 @@ html.gsap-mode [data-reveal] { transition: none; }
   .plans { grid-template-columns: repeat(3, 1fr); }
   .plans--single { grid-template-columns: minmax(0, 32rem); }
   .payment { grid-template-columns: 1fr 1fr; align-items: center; }
-  .editorial { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .venue { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); }
   .footer__cta { grid-template-columns: minmax(0, 1.4fr) minmax(0, .6fr); }
   .footer__grid { grid-template-columns: 1.3fr 1fr 1fr; }

@@ -1,6 +1,6 @@
-# 6.º In Europa — Encontro Internacional de Inteligência nos Negócios
+# 7.º In Europa — Encontro Internacional de Inteligência nos Negócios
 
-Site institucional one-page do encontro de 18 de outubro de 2026, no Hotel Lezíria Park, em Vila Franca de Xira.
+Site institucional one-page do encontro de 16 de maio de 2027, no Porto Palácio Hotel (Av. da Boavista 1269, Porto).
 Realização: Próximo Nível Eventos e Negócios (Gádia Santos).
 
 HTML5 + CSS3 + JavaScript vanilla. Sem framework, sem build step, sem dependências instaladas.
@@ -14,7 +14,7 @@ index.html                  página principal (13 secções)
 politica-privacidade.html   política de privacidade (RGPD)
 css/style.css               estilos, tokens em :root
 js/main.js                  Lenis, GSAP/ScrollTrigger, nav, scroll spy, separadores
-assets/img/                 hero, Lisboa, hotel, retrato, galeria, monograma, favicon, og
+assets/img/                 hero, Porto, hotel, retrato, galeria, monograma, favicon, og
 robots.txt / sitemap.xml    indexação (apontam para o domínio final)
 assets/icons/               ícones dos 5 pilares (extraídos do material oficial)
 .nojekyll                   evita o processamento Jekyll no GitHub Pages
@@ -31,7 +31,7 @@ volta ao comportamento nativo.
 ```bash
 git init
 git add .
-git commit -m "Site 6.º In Europa"
+git commit -m "Site 7.º In Europa"
 git branch -M main
 git remote add origin <url-do-repositorio>
 git push -u origin main
